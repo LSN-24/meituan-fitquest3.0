@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #fffdf4;
+  --surface: #fffaf0;
+  --card: rgba(255, 255, 255, 0.9);
+  --text: #172126;
+  --muted: #5f6f76;
+  --line: rgba(23, 33, 38, 0.08);
+  --yellow: #ffd24d;
+  --yellow-deep: #f7b500;
+  --mint: #49d6b5;
+  --mint-deep: #1fa787;
+  --blue: #5dbbff;
+  --coral: #ff8e6e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top, rgba(255, 210, 77, 0.35), transparent 32%),
+    linear-gradient(180deg, #fffdf4 0%, #f5fff9 52%, #fff7ef 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family:
+    "ui-rounded",
+    "SF Pro Rounded",
+    "Hiragino Sans GB",
+    "PingFang SC",
+    sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255, 210, 77, 0.24), transparent 24%),
+    radial-gradient(circle at 85% 15%, rgba(73, 214, 181, 0.26), transparent 24%);
+}
+
+.glass-card {
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 40px rgba(65, 79, 88, 0.08);
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.progress-track {
+  background: rgba(23, 33, 38, 0.08);
+}
+
+.badge-ring {
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55),
+    0 10px 24px rgba(73, 214, 181, 0.18);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

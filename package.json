@@ -1,0 +1,29 @@
+{
+  "name": "meituan-fitquest",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "\"$npm_node_execpath\" node_modules/next/dist/bin/next dev",
+    "build": "\"$npm_node_execpath\" node_modules/next/dist/bin/next build",
+    "start": "\"$npm_node_execpath\" node_modules/next/dist/bin/next start",
+    "lint": "\"$npm_node_execpath\" node_modules/next/dist/bin/next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Mobile-first product prototype for Meituan FitQuest.",
+  "dependencies": {
+    "next": "^15.5.18",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^25.6.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.6",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3"
+  }
+}
